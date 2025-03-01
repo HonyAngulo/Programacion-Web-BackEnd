@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+     <style>
+        /* Centrar vertical y horizontalmente */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Altura completa de la pantalla */
+            margin: 0;
+            flex-direction: column; /* Apila los elementos verticalmente */
+            background-color: #f9f9f9; /* Fondo claro */
+        }
+
+        /* Centrar el <h1> */
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #27619b;
+            margin-bottom: 20px;
+        }
+
+        /* Centrar el <nav> */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+    </style>
+    <h1>Acerca de nosotros</h1>
+    <nav>
+        <a href="/">Inicio</a> |
+        <a href="/about">Acerca de</a> |
+        <a href="/contact">Contacto</a>
+    </nav>
+
+    <main>
+        <!-- Sección de Descripción de la Carrera -->
+        <section class="descripcion">
+            <h2>¿Qué es la Ingeniería en Sistemas Computacionales?</h2>
+            <p>
+                La Ingeniería en Sistemas Computacionales es una disciplina que combina conocimientos de hardware, software y redes para diseñar, desarrollar y mantener sistemas informáticos. Nuestro programa está diseñado para formar profesionales capaces de innovar en el campo de la tecnología, con aplicaciones en inteligencia artificial, desarrollo de software, ciberseguridad y más.
+            </p>
+        </section>
+
+        <!-- Sección de Plan de Estudios -->
+        <section class="plan-estudios">
+            <h2>Plan de Estudios</h2>
+            <p>
+                Nuestro plan de estudios está diseñado para cubrir las áreas más importantes de la ingeniería en sistemas, incluyendo:
+            </p>
+            <ul>
+                <li>Programación avanzada</li>
+                <li>Bases de datos</li>
+                <li>Redes y seguridad informática</li>
+                <li>Inteligencia artificial</li>
+                <li>Desarrollo de software</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Profesores -->
+        <section class="profesores">
+            <h2>Nuestros Profesores</h2>
+            <p>
+                Contamos con una profesora altamente calificada y con amplia experiencia en el campo de la programacón.
+            </p>
+            
+            <style>
+                .profesora {
+                    text-align: center;
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            </style>
+            
+            <div class="profesora">
+                <h3>Ing. Paloma Góngora</h3>
+                <p>Especialista en Programación.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Instalaciones -->
+        <section class="instalaciones">
+            <h2>Nuestras Instalaciones</h2>
+            <p>
+                Nuestro instituto cuenta con laboratorios de última generación, salones equipados y áreas de estudio para que los alumnos puedan desarrollar sus habilidades al máximo.
+            </p>
+            <img src="/11-15.jpg" alt="Laboratorio de computación con equipos modernos">
+        </section>
+
+        <!-- Sección de Eventos -->
+        <section class="eventos">
+            <h2>Próximos Eventos</h2>
+            <ul>
+                <li><strong>Conferencia de Tecnología:</strong> 15 de octubre, 2025.</li>
+                <li><strong>Logica y funcional:</strong> 20-22 de noviembre, 2025.</li>
+                <li><strong>Feria de Empleo:</strong> 5 de diciembre, 2025.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Instituto Tecnológico Superior de Felipe Carrillo Puerto 2025 &copy;</p>
+    </footer>
+</body>
+</html>

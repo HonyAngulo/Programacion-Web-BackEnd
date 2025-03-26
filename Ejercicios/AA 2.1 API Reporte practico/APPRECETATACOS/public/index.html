@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TacosMx</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>TacosChidos 🌮</h1>
+    
+    <form id="Form" class="buttons">
+        <button type="button" data-type="Pastor">🌮 </button>
+        <button type="button" data-type="Bistec">🥩 </button>
+        <button type="button" data-type="Suadero">🐮</button>
+        <button type="button" data-type="Pollo">🍗 </button>
+        <button type="button" data-type="Puerco">🐷</button>
+    </form>
+
+    <div id="Container"></div>
+
+    <script>
+        document.querySelectorAll("button").forEach(boton => {
+            boton.addEventListener("click", () => {
+                const tipo = boton.dataset.type;
+                
+                fetch(`/receta/${tipo}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.mensaje) {
+                            document.getElementById("Container").innerHTML = `<p>${data.mensaje}</p>`;
+                        } else {
+                            document.getElementById("Container").innerHTML = 
+                                `<h2>${data.tipo}</h2>
+                                 <p>${data.descripcion}</p>
+                                 <p>Proteína: ${data.proteina}</p>
+                                 <p>Salsa: ${data.salsa}</p>
+                                 <p>Acompañamiento: ${data.acompañamiento}</p>`;
+                        }
+                    })
+                    .catch(error => console.error("Error al obtener datos:", error));
+            });
+        });
+    </script>
+</body>
+</html>

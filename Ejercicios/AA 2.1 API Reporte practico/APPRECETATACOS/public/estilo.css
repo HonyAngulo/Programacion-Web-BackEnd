@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    color: #d2691e;
+    font-size: 40px;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 80px;
+    border-radius: 5px;
+}
+
+#Container {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

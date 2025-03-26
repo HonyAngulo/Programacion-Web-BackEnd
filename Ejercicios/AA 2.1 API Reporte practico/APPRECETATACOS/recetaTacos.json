@@ -1,0 +1,37 @@
+[
+  {
+    "tipo": "Pastor",
+    "proteina": "Cerdo",
+    "salsa": "salsa de tomate",
+    "acompañamiento": "pico de gallo",
+    "descripcion": "Tacos de cerdo marinados con achiote y piña."
+  },
+  {
+    "tipo": "Bistec",
+    "proteina": "Res",
+    "salsa": "salsa verde",
+    "acompañamiento": "cebolla curtida",
+    "descripcion": "Tacos con carne de res asada."
+  },
+  {
+    "tipo": "Suadero",
+    "proteina": "Res",
+    "salsa": "Roja y Verde",
+    "acompañamiento": "cebolla blanca con cilantro",
+    "descripcion": "Tacos con carne de suadero cocida lentamente."
+  },
+  {
+    "tipo": "Pollo",
+    "proteina": "Pollo",
+    "salsa": "salsa de tomate",
+    "acompañamiento": "cebolla curtida",
+    "descripcion": "Tacos de pollo asado con especias."
+  },
+  {
+    "tipo": "Puerco",
+    "proteina": "Cerdo",
+    "salsa": "Roja",
+    "acompañamiento": "pico de gallo",
+    "descripcion": "Tacos de carnitas tradicionales."
+  }
+]
